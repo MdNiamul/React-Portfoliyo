@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Ecommerce Website",
+    "description": "Full ecommerce website with cart and payment system.",
+    "image": "https://i.ibb.co/7QpKsCX/ecommerce.jpg",
+    "live": "https://example.com",
+    "github": "https://github.com/example"
+  },
+  {
+    "id": 2,
+    "title": "News Portal",
+    "description": "Dynamic news website with category system.",
+    "image": "https://i.ibb.co/YQ9G9pS/news.jpg",
+    "live": "https://example.com",
+    "github": "https://github.com/example"
+  },
+  {
+    "id": 3,
+    "title": "Portfolio Website",
+    "description": "Personal developer portfolio website.",
+    "image": "https://i.ibb.co/8s5J8F1/portfolio.jpg",
+    "live": "https://example.com",
+    "github": "https://github.com/example"
+  },
+  {
+    "id": 4,
+    "title": "Blog Website",
+    "description": "Modern blog website with markdown support.",
+    "image": "https://i.ibb.co/ZYW3VTp/blog.jpg",
+    "live": "https://example.com",
+    "github": "https://github.com/example"
+  },
+  {
+    "id": 5,
+    "title": "Task Manager App",
+    "description": "Task management app with drag and drop features.",
+    "image": "https://i.ibb.co/6R3s6ZC/task.jpg",
+    "live": "https://example.com",
+    "github": "https://github.com/example"
+  },
+  {
+    "id": 6,
+    "title": "Weather App",
+    "description": "Weather forecasting app using public API.",
+    "image": "https://i.ibb.co/2W2H4kR/weather.jpg",
+    "live": "https://example.com",
+    "github": "https://github.com/example"
+  },
+  {
+    "id": 7,
+    "title": "Chat Application",
+    "description": "Real-time chat application using WebSocket.",
+    "image": "https://i.ibb.co/0jqHpnp/chat.jpg",
+    "live": "https://example.com",
+    "github": "https://github.com/example"
+  },
+  {
+    "id": 8,
+    "title": "Restaurant Website",
+    "description": "Restaurant booking and menu website.",
+    "image": "https://i.ibb.co/Vp5W7Yh/restaurant.jpg",
+    "live": "https://example.com",
+    "github": "https://github.com/example"
+  }
+]

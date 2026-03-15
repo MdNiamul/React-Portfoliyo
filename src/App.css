@@ -2,3 +2,6 @@
 @plugin "daisyui";
 
 /* Optional: Custom styles */
+html{
+scroll-behavior: smooth;
+}
