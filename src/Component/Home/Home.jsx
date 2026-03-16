@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "../../Pages/HeroSection";
 import Skills from "../../Pages/Skills";
 import Project from "../Projects/Project";
+import About from "../../Pages/About";
 
 
 
@@ -10,11 +11,12 @@ import Project from "../Projects/Project";
 const Home = () => {
   return (
     <>
-    <div>
+      <div>
         <HeroSection></HeroSection>
         <Skills></Skills>
-       <Project></Project>
-    </div>
+        <Project></Project>
+        <About></About>
+      </div>
     </>
   );
 };
