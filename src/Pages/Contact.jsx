@@ -3,12 +3,12 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp
 
 const Contact = () => {
     const socialLinks = [
-        { id: 1, icon: <FaFacebookF />, link: "#" },
+        { id: 1, icon: <FaFacebookF />, link: "https://web.facebook.com/niamul.islam.480597/" },
         { id: 2, icon: <FaTwitter />, link: "#" },
-        { id: 3, icon: <FaLinkedinIn />, link: "#" },
-        { id: 4, icon: <FaGithub />, link: "#" },
+        { id: 3, icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/niamul-hossain-948554240/" },
+        { id: 4, icon: <FaGithub />, link: "https://github.com/MdNiamul" },
         { id: 5, icon: <FaInstagram />, link: "#" },
-        { id: 6, icon: <FaWhatsapp />, link: "#" }
+        { id: 6, icon: <FaWhatsapp />, link: "https://call.whatsapp.com/" }
     ];
 
     return (

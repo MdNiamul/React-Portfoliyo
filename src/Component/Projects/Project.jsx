@@ -21,13 +21,13 @@ const Project = () => {
         My Projects
       </h1>
 
-      <div className="grid cursor-pointer md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+      <div className="grid cursor-pointer md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {projects.map((project) => (
 
           <div
             key={project.id}
-            className="bg-red-300 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+            className="bg-red-300 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col"
           >
 
             <img
@@ -36,7 +36,7 @@ const Project = () => {
               className="w-full h-60 object-cover"
             />
 
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-grow">
 
               <h2 className="text-xl font-bold mb-2">
                 {project.title}
@@ -46,12 +46,13 @@ const Project = () => {
                 {project.description}
               </p>
 
-              <div className="flex gap-3">
+              {/* Buttons always bottom */}
+              <div className="flex gap-3 mt-auto">
 
                 <a
                   href={project.live}
                   target="_blank"
-                  className="bg-blue-600 text-white px-4 py-2 rounded"
+                  className="bg-blue-600 text-white px-4 py-2 rounded-2xl"
                 >
                   Live
                 </a>
@@ -59,7 +60,7 @@ const Project = () => {
                 <a
                   href={project.github}
                   target="_blank"
-                  className="bg-gray-800 text-white px-4 py-2 rounded"
+                  className="bg-gray-800 text-white px-4 py-2 rounded-2xl"
                 >
                   GitHub
                 </a>

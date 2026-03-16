@@ -9,8 +9,8 @@ const Skills = () => {
     { name: "JavaScript", percent: 85, icon: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png" },
     { name: "React", percent: 80, icon: "https://cdn-icons-png.flaticon.com/512/1126/1126012.png" },
     { name: "Next.js", percent: 70, icon: "https://cdn.worldvectorlogo.com/logos/next-js.svg" },
-    { name: "Node.js", percent: 65, icon: "https://cdn-icons-png.flaticon.com/512/919/919825.png" },
-    { name: "MongoDB", percent: 60, icon: "https://cdn-icons-png.flaticon.com/512/919/919836.png" }
+    { name: "Node.js", percent: 80, icon: "https://cdn-icons-png.flaticon.com/512/919/919825.png" },
+    { name: "MongoDB", percent: 80, icon: "https://cdn-icons-png.flaticon.com/512/919/919836.png" }
   ];
 
   return (
@@ -28,29 +28,34 @@ const Skills = () => {
 
             <div
               key={index}
-              className="p-6 bg-white shadow-lg rounded-xl hover:scale-105 hover:shadow-2xl transition duration-500"
+              className="relative p-6 bg-red-300 shadow-lg rounded-xl hover:scale-105 hover:shadow-2xl transition duration-500 overflow-hidden"
             >
 
-              <img
-                src={skill.icon}
-                alt={skill.name}
-                className="w-16 h-16 mx-auto mb-4"
-              />
+              {/* Glow Light */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-20 blur-2xl animate-pulse"></div>
 
-              <h3 className="font-semibold mb-3">{skill.name}</h3>
+              <div className="relative z-10">
 
-              <div className="w-full bg-gray-200 rounded-full h-3">
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="w-16 h-16 mx-auto mb-4"
+                />
 
-                <div
-                  className="bg-blue-600 h-3 rounded-full transition-all duration-1000"
-                  style={{ width: `${skill.percent}%` }}
-                ></div>
+                <h3 className="font-semibold mb-3">{skill.name}</h3>
+
+                <div className="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    className="bg-blue-600 h-3 rounded-full transition-all duration-1000"
+                    style={{ width: `${skill.percent}%` }}
+                  ></div>
+                </div>
+
+                <p className="mt-2 text-sm text-gray-600">
+                  {skill.percent}%
+                </p>
 
               </div>
-
-              <p className="mt-2 text-sm text-gray-600">
-                {skill.percent}%
-              </p>
 
             </div>
 
