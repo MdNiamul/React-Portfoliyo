@@ -27,13 +27,13 @@ const Project = () => {
 
           <div
             key={project.id}
-            className="bg-gray-500 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+            className="bg-red-300 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300"
           >
 
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-60 object-cover"
             />
 
             <div className="p-6">
@@ -42,7 +42,7 @@ const Project = () => {
                 {project.title}
               </h2>
 
-              <p className="text-gray-600 mb-4">
+              <p className="text-green-900 mb-4">
                 {project.description}
               </p>
 

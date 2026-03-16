@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "title": "Ecommerce Website",
-    "description": "Full ecommerce website with cart and payment system.",
-    "image": "https://i.ibb.co/7QpKsCX/ecommerce.jpg",
-    "live": "https://example.com",
-    "github": "https://github.com/example"
+    "title": "Dragon NewsPaper",
+    "description": "Dragon Newspaper provides the latest news, breaking stories, and trending updates in one place.",
+    "image": "https://i.postimg.cc/SKMmV2mH/image.png",
+    "live": "https://dragon-news-50a6a.web.app/",
+    "github": "https://github.com/MdNiamul/Dragon-News-Builder.git"
   },
   {
     "id": 2,
