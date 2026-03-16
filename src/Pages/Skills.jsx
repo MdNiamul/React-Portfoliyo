@@ -18,7 +18,9 @@ const Skills = () => {
 
       <div className="max-w-6xl mx-auto text-center">
 
-        <h2 className="text-4xl font-bold mb-12">My Skills</h2>
+        <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">My Skills</h2>
 
         <div className="grid cursor-pointer grid-cols-2 md:grid-cols-4 gap-8">
 

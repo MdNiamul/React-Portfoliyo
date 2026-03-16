@@ -11,10 +11,12 @@ const Experience = () => {
     }, []);
 
     return (
-        <section id="experience" className="max-w-7xl mx-auto px-6 py-20">
+        <section id="experience" className="max-w-7xl mx-auto px-6 py-20 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">
             <h1 className="text-4xl font-bold text-center mb-12">Experience</h1>
 
-            <div className="space-y-8">
+            <div className="space-y-8 ">
                 {experiences.map((exp) => (
                     <div
                         key={exp.id}

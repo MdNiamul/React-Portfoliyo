@@ -15,11 +15,13 @@ const Project = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-20">
 
-      <h1 className="text-4xl font-bold text-center mb-12">
+      <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">
         My Projects
       </h1>
 
-      <div className="grid cursor-pointer md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid cursor-pointer md:grid-cols-2 lg:grid-cols-3 gap-8 ">
 
         {projects.map((project) => (
 

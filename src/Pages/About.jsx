@@ -5,7 +5,9 @@ const About = () => {
   return (
     <section id="about" className="max-w-7xl mx-auto px-6 py-20">
       
-      <h1 className="text-4xl font-bold text-center mb-12">
+      <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">
         About Me
       </h1>
 
@@ -23,32 +25,38 @@ const About = () => {
         {/* About Text */}
         <div>
 
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">
             I'm Md Niamul Hossain
           </h2>
 
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 mb-4 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">
             I am a passionate Frontend Web Developer who loves building
             modern, responsive, and user-friendly websites. I enjoy turning
             ideas into real web applications using modern technologies.
           </p>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-6 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">
             I started my journey with HTML, CSS, and JavaScript, and later
             moved to frameworks like React.js and Next.js. I always try to
             create clean UI and smooth user experience.
           </p>
 
           {/* Skills */}
-          <div className="grid grid-cols-2 gap-3 mb-6">
-            <span className="bg-gray-400 px-3 py-2 rounded">HTML</span>
-            <span className="bg-gray-500 px-3 py-2 rounded">CSS</span>
-            <span className="bg-gray-400 px-3 py-2 rounded">JavaScript</span>
-            <span className="bg-gray-400 px-3 py-2 rounded">React</span>
-            <span className="bg-gray-400 px-3 py-2 rounded">Next.js</span>
-            <span className="bg-gray-400 px-3 py-2 rounded">Tailwind</span>
-            <span className="bg-gray-400 px-3 py-2 rounded">MongoDb</span>
-            <span className="bg-gray-400 px-3 py-2 rounded">Tailwind</span>
+          <div className="grid grid-cols-2 gap-3 mb-6 ">
+            <span className="bg-red-400 px-3 py-2 rounded">HTML</span>
+            <span className="bg-blue-500 px-3 py-2 rounded">CSS</span>
+            <span className="bg-green-400 px-3 py-2 rounded">JavaScript</span>
+            <span className="bg-yellow-400 px-3 py-2 rounded">React</span>
+            <span className="bg-amber-600 px-3 py-2 rounded">Next.js</span>
+            <span className="bg-cyan-400 px-3 py-2 rounded">Tailwind</span>
+            <span className="bg-red-800 px-3 py-2 rounded">MongoDb</span>
+            <span className="bg-amber-950 px-3 py-2 rounded">Tailwind</span>
           </div>
 
           {/* Button */}

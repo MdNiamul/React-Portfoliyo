@@ -13,12 +13,14 @@ const Contact = () => {
 
     return (
         <section id="contact" className="max-w-7xl mx-auto px-6 py-20">
-            <h1 className="text-4xl font-bold text-center mb-12">Contact Me</h1>
+            <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">Contact Me</h1>
 
             <div className="flex justify-around md:flex-row gap-10">
 
                 {/* Social Icons - Left Side */}
-                <div className="md:w-1/5 grid grid-cols-2 gap-4 justify-items-center md:justify-items-start">
+                <div className=" md:w-1/5 grid grid-cols-2 gap-4 justify-items-center md:justify-items-start">
                     {socialLinks.map((social) => (
                         <a
                             key={social.id}
@@ -34,7 +36,9 @@ const Contact = () => {
 
                 {/* Contact Form / Message - Right Side */}
                 <div className="md:w-2/5">
-                    <p className="text-gray-600 mb-6">
+                    <p className="text-gray-600 mb-6 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">
                         I'm open for work! Feel free to reach out via social media or send a message directly.
                     </p>
 
