@@ -1,4 +1,6 @@
 import React from 'react';
+import imge from '../assets/niamul4.png';
+
 
 const HeroSection = () => {
     return (
@@ -33,12 +35,34 @@ const HeroSection = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-center">
-                        <img
-                            src="https://i.ibb.co/4pDNDk1/avatar.png"
-                            alt=""
-                            className="w-80 rounded-full border-4 border-blue-500"
-                        />
+                    <div className="flex justify-center items-center min-h-screen bg-gray-900">
+                        {/* বাইরের ঘূর্ণন রিং */}
+                        <div
+                            className="w-96 h-96 rounded-full p-0.5 flex items-center justify-center
+               bg-gradient-to-r from-blue-500 via-pink-500 to-purple-500
+               shadow-lg"
+                            style={{ animation: "spin 8s linear infinite" }} // বাইরের রিং ঘুরবে
+                        >
+                            {/* ভিতরের স্থির কালো বৃত্ত */}
+                            <div className="w-80 h-80 rounded-full bg-black flex items-center justify-center overflow-hidden">
+                                {/* প্রোফাইল ছবি - স্থির থাকবে */}
+                                <img
+                                    src={imge} // এখানে তোমার image variable বা path বসাবে
+                                    alt="profile"
+                                    className="w-72 h-72 rounded-full object-cover"
+                                />
+                            </div>
+
+                            {/* div এর ভিতরেই keyframes */}
+                            <style>
+                                {`
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}
+                            </style>
+                        </div>
                     </div>
 
                 </div>
