@@ -27,7 +27,7 @@ const Project = () => {
 
           <div
             key={project.id}
-            className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+            className="bg-gray-500 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-300"
           >
 
             <img

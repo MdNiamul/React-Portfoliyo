@@ -20,7 +20,9 @@ const Experience = () => {
                 {experiences.map((exp) => (
                     <div
                         key={exp.id}
-                        className="bg-red-300 rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300"
+                        className="bg-base-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]"
                     >
                         <div className="flex justify-between items-center mb-2">
                             <h2 className="text-2xl text-green-500 font-semibold">{exp.title}</h2>
