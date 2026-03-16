@@ -8,7 +8,7 @@ const HeroSection = () => {
             <section className="min-h-screen flex items-center">
                 <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-                    <div>
+                    {/* <div>
                         <h2 className="text-gray-400">Hello I'm</h2>
 
                         <h1 className="text-5xl font-bold mt-2">
@@ -33,6 +33,44 @@ const HeroSection = () => {
                                 My Projects
                             </button>
                         </div>
+                    </div> */}
+
+                    <div>
+                        <h2 className="text-gray-400 bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                         bg-[length:200%_100%] bg-clip-text text-transparent
+                         animate-[shine_3s_linear_infinite]">Hello I'm</h2>
+
+                        <h1 className="text-5xl font-bold mt-2 
+                           bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">
+                            Md Niamul Hossain
+                        </h1>
+
+                        <h3 className="text-2xl mt-3 
+                           bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                           bg-[length:200%_100%] bg-clip-text text-transparent
+                           animate-[shine_3s_linear_infinite]">
+                            Frontend Web Developer
+                        </h3>
+
+                        <p className="text-xl font-bold mt-2 
+                          bg-gradient-to-r from-red-500 via-blue-500 to-green-500
+                          bg-[length:200%_100%] bg-clip-text text-transparent
+                          animate-[shine_3s_linear_infinite]">
+                            I build modern responsive websites using React,
+                            Tailwind CSS and modern technologies.
+                        </p>
+
+                        <div className="mt-6 flex gap-4">
+                            <button className="bg-blue-500 cursor-pointer px-6 py-3 rounded-lg hover:bg-blue-600 ">
+                                Download Resume
+                            </button>
+
+                            <button className="border cursor-pointer border-blue-500 px-6 py-3 rounded-lg hover:bg-blue-500">
+                                My Projects
+                            </button>
+                        </div>
                     </div>
 
                     <div className="flex justify-center items-center min-h-screen">
@@ -50,7 +88,7 @@ const HeroSection = () => {
                                     className="w-full h-full rounded-full object-cover"
                                 />
                             </div>
-                            
+
                         </div>
                     </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import image from '../assets/Niamul.png'
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
         {/* Profile Image */}
         <div className="flex justify-center">
           <img
-            src="https://i.ibb.co/4pDNDk1/avatar.png"
+            src={image}
             alt="profile"
             className="w-72 rounded-2xl shadow-lg"
           />
