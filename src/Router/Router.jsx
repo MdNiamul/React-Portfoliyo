@@ -5,6 +5,7 @@ import ErrorPage from "../Pages/ErrorPage";
 import Skills from "../Pages/Skills";
 import Project from "../Component/Projects/Project";
 import About from "../Pages/About";
+import Experience from "../Pages/Experience";
 
 
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         {
           path: 'about',
           element: <About></About>
+        },
+        {
+          path: 'experience',
+          element: <Experience></Experience>
         }
     ]
   },
