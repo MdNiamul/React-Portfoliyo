@@ -23,11 +23,11 @@ const HeroSection = () => {
                         </p>
 
                         <div className="mt-6 flex gap-4">
-                            <button className="bg-blue-500 px-6 py-3 rounded-lg hover:bg-blue-600">
+                            <button className="bg-blue-500 cursor-pointer px-6 py-3 rounded-lg hover:bg-blue-600">
                                 Download Resume
                             </button>
 
-                            <button className="border border-blue-500 px-6 py-3 rounded-lg hover:bg-blue-500">
+                            <button className="border cursor-pointer border-blue-500 px-6 py-3 rounded-lg hover:bg-blue-500">
                                 My Projects
                             </button>
                         </div>

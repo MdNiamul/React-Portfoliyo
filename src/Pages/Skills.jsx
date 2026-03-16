@@ -20,7 +20,7 @@ const Skills = () => {
 
         <h2 className="text-4xl font-bold mb-12">My Skills</h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid cursor-pointer grid-cols-2 md:grid-cols-4 gap-8">
 
           {skills.map((skill, index) => (
 

@@ -1,9 +1,16 @@
-import React from "react";
-import { useLoaderData } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 const Project = () => {
 
-  const projects = useLoaderData() || [];
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("/Project.json")
+      .then(res => res.json())
+      .then(data => setProjects(data));
+  }, []);
+
+  // console.log(projects);
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-20">
@@ -12,7 +19,7 @@ const Project = () => {
         My Projects
       </h1>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid cursor-pointer md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {projects.map((project) => (
 
@@ -42,7 +49,7 @@ const Project = () => {
                 <a
                   href={project.live}
                   target="_blank"
-                  className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                  className="bg-blue-600 text-white px-4 py-2 rounded"
                 >
                   Live
                 </a>
@@ -50,7 +57,7 @@ const Project = () => {
                 <a
                   href={project.github}
                   target="_blank"
-                  className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-black transition"
+                  className="bg-gray-800 text-white px-4 py-2 rounded"
                 >
                   GitHub
                 </a>
