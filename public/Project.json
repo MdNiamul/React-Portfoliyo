@@ -33,11 +33,11 @@
   },
   {
     "id": 5,
-    "title": "Task Manager App",
+    "title": "Amol Tracker App",
     "description": "Task management app with drag and drop features.",
-    "image": "https://i.ibb.co/6R3s6ZC/task.jpg",
-    "live": "https://example.com",
-    "github": "https://github.com/example"
+    "image": "https://i.postimg.cc/V6Fcv29C/image.png",
+    "live": "https://mellifluous-biscuit-c1284f.netlify.app/",
+    "github": "https://github.com/MdNiamul/Amol_tracker.git"
   },
   {
     "id": 6,

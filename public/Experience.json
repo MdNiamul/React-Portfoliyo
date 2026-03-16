@@ -2,9 +2,9 @@
   {
     "id": 1,
     "title": "Frontend Developer Intern",
-    "company": "2-Month Internship",
+    "company": "Sherazi IT ",
     "duration": "2 Months",
-    "year": "2025",
+    "year": "2025-10-19",
     "details": "Learned and practiced building responsive web pages using HTML, CSS, JavaScript, and React.js. Gained hands-on experience in creating interactive UI components and handling basic project workflows."
   },
   {
@@ -20,15 +20,15 @@
     "title": "Data Entry & Analysis",
     "company": "IIML",
     "duration": "3 Years",
-    "year": "2022-2024",
+    "year": "2023-2025",
     "details": "Handled large volumes of data entry and performed data analysis efficiently using Excel and Google Sheets. Learned how to structure data, find insights, and improve workflow productivity."
   },
   {
     "id": 4,
     "title": "Call Center Executive",
     "company": "Company Name",
-    "duration": "3 Years",
-    "year": "2017-2020",
+    "duration": "1 Years",
+    "year": "2022-2023",
     "details": "Provided excellent customer support, handled client queries, and maintained high satisfaction ratings. Developed communication, problem-solving, and multitasking skills."
   }
 ]

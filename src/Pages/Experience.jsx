@@ -27,8 +27,9 @@ const Experience = () => {
                         <div className="flex justify-between items-center mb-2">
                             <h2 className="text-2xl text-green-500 font-semibold">{exp.title}</h2>
                             <div className="grid grid-cols-1 place-items-center">
-                                <span className="text-gray-500">{exp.duration}</span>
                                 <span className="text-gray-500">{exp.year}</span>
+                                <span className="text-gray-500">{exp.duration}</span>
+                                
                             </div>
                         </div>
                         <h3 className="text-gray-700 mb-2">{exp.company}</h3>
