@@ -35,33 +35,22 @@ const HeroSection = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-center items-center min-h-screen bg-gray-900">
-                        {/* বাইরের ঘূর্ণন রিং */}
-                        <div
-                            className="w-96 h-96 rounded-full p-0.5 flex items-center justify-center
-               bg-gradient-to-r from-blue-500 via-pink-500 to-purple-500
-               shadow-lg"
-                            style={{ animation: "spin 8s linear infinite" }} // বাইরের রিং ঘুরবে
-                        >
-                            {/* ভিতরের স্থির কালো বৃত্ত */}
-                            <div className="w-80 h-80 rounded-full bg-black flex items-center justify-center overflow-hidden">
-                                {/* প্রোফাইল ছবি - স্থির থাকবে */}
+                    <div className="flex justify-center items-center min-h-screen">
+                        {/* wrapper */}
+                        <div className="relative w-80 h-80 flex items-center justify-center">
+
+                            {/* spinning colored ring */}
+                            <div className="absolute w-full h-full rounded-full border-4 border-t-blue-500 border-r-pink-500 border-b-purple-500 border-l-green-500 animate-spin"></div>
+
+                            {/* inner black circle + image */}
+                            <div className="absolute w-72 h-72 rounded-full bg-black flex items-center justify-center overflow-hidden">
                                 <img
-                                    src={imge} // এখানে তোমার image variable বা path বসাবে
+                                    src={imge}
                                     alt="profile"
-                                    className="w-72 h-72 rounded-full object-cover"
+                                    className="w-full h-full rounded-full object-cover"
                                 />
                             </div>
-
-                            {/* div এর ভিতরেই keyframes */}
-                            <style>
-                                {`
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-      `}
-                            </style>
+                            
                         </div>
                     </div>
 

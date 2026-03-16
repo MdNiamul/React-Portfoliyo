@@ -1,16 +1,50 @@
-# React + Vite
+# Portfolio - Md Niamul Hossain
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a web developer.
 
-Currently, two official plugins are available:
+## 🚀 About Me
+Hi! I'm **Md Niamul Hossain**, a passionate web developer specializing in **React.js, Next.js, Tailwind CSS, and TypeScript**. I love building responsive and interactive web applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💻 Technologies Used
+- **Frontend:** React.js, Next.js
+- **Styling:** Tailwind CSS, DaisyUI
+- **State Management:** Redux Toolkit
+- **Other Tools:** Framer Motion, React Icons
+- **Database:** MySQL (for full-stack projects)
 
-## React Compiler
+## 📂 Project Structure
+src/
+├─ components/ # All reusable UI components
+├─ pages/ # Page components
+├─ assets/ # Images, icons, and media
+├─ store/ # Redux store and slices
+├─ App.jsx
+└─ main.jsx
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## 🌟 Features
+- Fully responsive design
+- Animated sections using Framer Motion
+- Skills and projects showcase
+- Contact form with social links
+- Easy to customize and extend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔗 Live Demo
+[View Live Portfolio](#)  
+
+## 📂 How to Run Locally
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio.git
+
+cd portfolio
+npm install
+npm run dev
+Open http://localhost:5173
+ to view in your browser.
+
+📞 Contact
+01743672770
+You can reach me via social media or email: niamulhossen223@gmail.com
+
+run_time_uptade
