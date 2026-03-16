@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
 
         <h1 className="text-2xl font-bold text-blue-400">
-          Niamul<span className="text-white">Dev</span>
+          Niamul <span className='text-red-500'>Dev.</span>
         </h1>
 
 
