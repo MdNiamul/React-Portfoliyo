@@ -30,7 +30,7 @@ src/
 - Easy to customize and extend
 
 ## 🔗 Live Demo
-https://celebrated-travesseiro-ec8348.netlify.app/
+https://dancing-frangollo-b01da3.netlify.app/
 
 ## 📂 How to Run Locally
 1. Clone the repository:
