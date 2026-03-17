@@ -94,7 +94,7 @@ const Project = () => {
   }, []);
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20 text-white">
+    <section id='Projects' className="max-w-7xl mx-auto px-6 py-20 text-white ">
 
       {/* Title */}
       <h1 className="text-4xl font-bold text-center mb-4 

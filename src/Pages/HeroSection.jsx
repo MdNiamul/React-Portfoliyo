@@ -126,18 +126,20 @@ const HeroSection = () => {
                     </h3>
 
                     <p className="text-gray-400 mt-4 max-w-md mx-auto md:mx-0 text-sm sm:text-base">
-                        I build modern, responsive and high-performance web applications 
+                        I build modern, responsive and high-performance web applications
                         using React, Tailwind CSS and modern technologies.
                     </p>
 
                     <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <button className="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-3 rounded-lg hover:scale-105 transition">
+                        <button className="bg-gradient-to-r cursor-pointer from-blue-500 to-purple-500 px-6 py-3 rounded-lg hover:scale-105 transition">
                             Download Resume
                         </button>
 
-                        <button className="border border-purple-400 px-6 py-3 rounded-lg hover:bg-purple-500 hover:text-white transition">
-                            My Projects
-                        </button>
+                        <a href="#Projects">
+                            <button className="border cursor-pointer border-purple-400 px-6 py-3 rounded-lg hover:bg-purple-500 hover:text-white transition">
+                                My Projects
+                            </button>
+                        </a>
                     </div>
                 </div>
 

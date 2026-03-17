@@ -160,12 +160,12 @@ const About = () => {
           {/* Optional Button */}
           <div className="mt-6">
             <a href="#contact" className="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition transform inline-block text-white font-semibold">
-              Contact Me
+              Hire Me
             </a>
           </div>
 
         </div>
-        
+
       </div>
 
     </section>

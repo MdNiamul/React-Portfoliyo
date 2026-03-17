@@ -142,10 +142,10 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="max-w-7xl mx-auto px-6 py-20">
+    <section id="contact" className="max-w-5xl mx-auto px-6 py-20">
       
       {/* Header */}
-      <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-red-500 via-blue-500 to-green-500 bg-[length:200%_100%] bg-clip-text text-transparent animate-[shine_3s_linear_infinite]">
+      <h1 className="text-4xl md:text-3xl font-extrabold text-center mb-16 bg-gradient-to-r from-red-500 via-blue-500 to-green-500 bg-[length:200%_100%] bg-clip-text text-transparent animate-[shine_3s_linear_infinite]">
         Contact Me
       </h1>
 
