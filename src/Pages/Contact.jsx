@@ -172,7 +172,7 @@ const Contact = () => {
             I'm open for work! Feel free to reach out via social media or send a message directly.
           </p>
 
-          <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+          <form ref={form} onSubmit={sendEmail} className=" flex flex-col gap-4">
             <input
               type="text"
               name="user_name"

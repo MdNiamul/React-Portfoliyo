@@ -105,31 +105,32 @@ import imge from '../assets/niamul4.png';
 
 const HeroSection = () => {
     return (
-        <section className="min-h-screen flex items-center bg-gray-900 text-white">
+        <section className="min-h-screen flex items-center bg-gray-900 text-white pt-16 md:pt-0">
+            {/* pt-16: mobile-এ navbar height অনুযায়ী padding */}
             <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
                 {/* LEFT SIDE */}
-                <div>
-                    <h2 className="text-gray-400">
+                <div className="text-center md:text-left">
+                    <h2 className="text-gray-400 text-lg md:text-xl">
                         Hello I'm
                     </h2>
 
-                    <h1 className="text-5xl font-bold mt-2 
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 
                         bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500
-                        bg-clip-text text-transparent">
+                        bg-clip-text text-transparent break-words">
                         Md Niamul Hossain
                     </h1>
 
-                    <h3 className="text-2xl mt-3 text-gray-300">
+                    <h3 className="text-xl sm:text-2xl mt-3 text-gray-300">
                         Frontend Developer
                     </h3>
 
-                    <p className="text-gray-400 mt-4 max-w-lg">
+                    <p className="text-gray-400 mt-4 max-w-md mx-auto md:mx-0 text-sm sm:text-base">
                         I build modern, responsive and high-performance web applications 
                         using React, Tailwind CSS and modern technologies.
                     </p>
 
-                    <div className="mt-6 flex gap-4">
+                    <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <button className="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-3 rounded-lg hover:scale-105 transition">
                             Download Resume
                         </button>
@@ -141,9 +142,8 @@ const HeroSection = () => {
                 </div>
 
                 {/* RIGHT SIDE */}
-                <div className="flex justify-center items-center">
-
-                    <div className="relative w-80 h-80 flex items-center justify-center">
+                <div className="flex justify-center md:justify-end items-center mt-8 md:mt-0">
+                    <div className="relative w-64 sm:w-72 md:w-80 h-64 sm:h-72 md:h-80 flex items-center justify-center">
 
                         {/* spinning ring */}
                         <div className="absolute w-full h-full rounded-full border-4 
@@ -151,7 +151,7 @@ const HeroSection = () => {
                             animate-spin"></div>
 
                         {/* image */}
-                        <div className="absolute w-72 h-72 rounded-full bg-gray-900 flex items-center justify-center overflow-hidden">
+                        <div className="absolute w-56 sm:w-72 md:w-72 h-56 sm:h-72 md:h-72 rounded-full bg-gray-900 flex items-center justify-center overflow-hidden">
                             <img
                                 src={imge}
                                 alt="profile"
@@ -160,7 +160,6 @@ const HeroSection = () => {
                         </div>
 
                     </div>
-
                 </div>
 
             </div>
