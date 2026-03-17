@@ -117,14 +117,19 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs.sendForm(
       "service_o8wytaj",
       "template_4eiq2c1",
       form.current,
       "hkjzhCbZkDhhg2onG"
     )
-    .then(() => alert("Message Sent Successfully"))
-    .catch(() => alert("Failed to send message"));
+      .then(() => {
+        alert("Message Sent Successfully");
+      })
+      .catch(() => {
+        alert("Failed to send message");
+      });
   };
 
   const socialLinks = [
@@ -137,33 +142,24 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="max-w-7xl mx-auto px-6 py-28">
+    <section id="contact" className="max-w-7xl mx-auto px-6 py-20">
+      
+      {/* Header */}
+      <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-red-500 via-blue-500 to-green-500 bg-[length:200%_100%] bg-clip-text text-transparent animate-[shine_3s_linear_infinite]">
+        Contact Me
+      </h1>
 
-      {/* Section Header */}
-      <div className="text-center mb-20">
-        <h1 className="text-4xl font-bold
-            bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500
-            bg-clip-text text-transparent">
-          Contact Me
-        </h1>
-        <p className="text-gray-400 mt-3 text-lg">
-          I'm open for work! Reach out via social media or send a direct message.
-        </p>
-      </div>
+      <div className="flex flex-col md:flex-row gap-10">
 
-      <div className="flex flex-col md:flex-row gap-16 justify-center items-start">
-
-        {/* Social Media Links */}
-        <div className="grid grid-cols-3 md:grid-cols-1 gap-6 justify-items-center md:justify-items-start">
+        {/* Social Icons */}
+        <div className="md:w-1/4 flex flex-wrap gap-4 justify-center md:justify-start">
           {socialLinks.map((social) => (
             <a
               key={social.id}
               href={social.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-16 h-16 flex items-center justify-center text-2xl 
-                rounded-full bg-gradient-to-br from-blue-500 to-purple-500 
-                text-white hover:scale-110 hover:shadow-xl transition transform duration-300"
+              className="w-14 h-14 flex items-center justify-center text-2xl rounded-full bg-gray-700 hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-400 text-white transition-all duration-300 shadow-lg"
             >
               {social.icon}
             </a>
@@ -171,37 +167,39 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="md:w-2/5 w-full bg-gray-900/50 backdrop-blur-md border border-gray-800 rounded-3xl p-8 shadow-2xl">
-          <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-5">
+        <div className="md:w-3/4 bg-gray-800 p-8 rounded-2xl shadow-xl">
+          <p className="text-gray-300 mb-6 text-lg bg-gradient-to-r from-red-400 via-blue-400 to-green-400 bg-[length:200%_100%] bg-clip-text text-transparent animate-[shine_3s_linear_infinite]">
+            I'm open for work! Feel free to reach out via social media or send a message directly.
+          </p>
 
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
             <input
               type="text"
               name="user_name"
               placeholder="Your Name"
-              className="bg-gray-800 text-white placeholder-gray-400 p-4 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
+              className="border border-gray-600 rounded-lg p-3 bg-gray-900 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
             />
 
             <input
               type="email"
               name="user_email"
               placeholder="Your Email"
-              className="bg-gray-800 text-white placeholder-gray-400 p-4 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
+              className="border border-gray-600 rounded-lg p-3 bg-gray-900 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
             />
 
             <textarea
               name="message"
-              rows="5"
               placeholder="Your Message"
-              className="bg-gray-800 text-white placeholder-gray-400 p-4 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
-            />
+              rows="5"
+              className="border border-gray-600 rounded-lg p-3 bg-gray-900 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+            ></textarea>
 
             <button
               type="submit"
-              className="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-3 rounded-xl text-white font-semibold hover:scale-105 hover:shadow-xl transition transform duration-300"
+              className="bg-gradient-to-r cursor-pointer from-blue-500 to-green-400 text-white font-semibold px-6 py-3 rounded-lg hover:scale-105 transition-transform shadow-lg"
             >
               Send Message
             </button>
-
           </form>
         </div>
 
