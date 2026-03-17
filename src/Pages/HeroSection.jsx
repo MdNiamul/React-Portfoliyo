@@ -102,6 +102,7 @@
 
 import React from 'react';
 import imge from '../assets/niamul4.png';
+import resume from '../assets/Niamul_Web.pdf';
 
 const HeroSection = () => {
     return (
@@ -131,9 +132,11 @@ const HeroSection = () => {
                     </p>
 
                     <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <button className="bg-gradient-to-r cursor-pointer from-blue-500 to-purple-500 px-6 py-3 rounded-lg hover:scale-105 transition">
-                            Download Resume
-                        </button>
+                        <a href={resume} download="Md_Niamul_Hossain_Resume.pdf">
+                            <button className="bg-gradient-to-r cursor-pointer from-blue-500 to-purple-500 px-6 py-3 rounded-lg hover:scale-105 transition">
+                                Download Resume
+                            </button>
+                        </a>
 
                         <a href="#Projects">
                             <button className="border cursor-pointer border-purple-400 px-6 py-3 rounded-lg hover:bg-purple-500 hover:text-white transition">
