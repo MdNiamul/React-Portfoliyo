@@ -1,0 +1,52 @@
+mutation CreateNewUser($username: String!, $email: String) @auth(level: PUBLIC, insecureReason: "This operation allows new users to register and is safe to expose publicly.") {
+  user_insert(data: {
+    id_expr: "uuidV4()",
+    username: $username,
+    email: $email,
+    createdAt_expr: "request.time"
+  })
+}
+
+query GetMyProjects @auth(level: USER) {
+  projects(where: { userId: { eq_expr: "auth.uid" } }) {
+    id
+    name
+    description
+    dueDate
+    createdAt
+  }
+}
+
+mutation CreateNewTask(
+  $title: String!,
+  $status: String!,
+  $description: String,
+  $dueDate: Date,
+  $priority: String,
+  $projectId: UUID
+) @auth(level: USER) {
+  task_insert(data: {
+    id_expr: "uuidV4()",
+    userId_expr: "auth.uid",
+    projectId: $projectId,
+    title: $title,
+    status: $status,
+    description: $description,
+    dueDate: $dueDate,
+    priority: $priority,
+    createdAt_expr: "request.time"
+  })
+}
+
+query GetAllProjects @auth(level: PUBLIC, insecureReason: "This operation lists all projects and is safe to expose publicly.") {
+  projects {
+    id
+    name
+    description
+    dueDate
+    user {
+      id
+      username
+    }
+  }
+}
