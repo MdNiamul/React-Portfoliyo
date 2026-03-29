@@ -28,7 +28,7 @@
     "title": "Portfolio Website",
     "description": "Modern blog website with markdown support.",
     "image": "https://i.postimg.cc/hPCr1M42/image.png",
-    "live": "https://example.com",
+    "live": "https://dancing-frangollo-b01da3.netlify.app/",
     "github": "https://github.com/MdNiamul/React-Portfoliyo.git"
   },
   {
@@ -41,11 +41,11 @@
   },
   {
     "id": 6,
-    "title": "Weather App",
-    "description": "Weather forecasting app using public API.",
+    "title": "Travel Guru",
+    "description": "Exploring the world with smart travel guides, budget tips, and unforgettable experiences 🌍✈️",
     "image": "https://i.ibb.co/2W2H4kR/weather.jpg",
-    "live": "https://example.com",
-    "github": "https://github.com/example"
+    "live": "https://rgtftyjhtyjutyujhtyujtyjutyjty.web.app/",
+    "github": "https://github.com/MdNiamul/Travel_Goru.git"
   },
   {
     "id": 7,
